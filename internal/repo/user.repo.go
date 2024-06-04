@@ -6,6 +6,6 @@ func NewUserRepo() *UserRepo {
 	return &UserRepo{}
 }
 
-func (ur *UserRepo) GetInfoUser(id int) string {
+func (ur *UserRepo) GetInfoUser() string {
 	return "user info"
 }

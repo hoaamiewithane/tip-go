@@ -3,7 +3,7 @@ package controller
 import (
 	"github.com/gin-gonic/gin"
 	"go-ecommerce/internal/service"
-	"net/http"
+	"go-ecommerce/response"
 )
 
 type UserController struct {
@@ -17,8 +17,5 @@ func NewUserController() *UserController {
 }
 
 func (uc *UserController) GetUserById(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"message": uc.userService.GetUserInfo(),
-		"user":    []string{"cr7", "messi", "neymar"},
-	})
+	response.SuccessResponse(c, 20001, []string{"user1", "user2"})
 }

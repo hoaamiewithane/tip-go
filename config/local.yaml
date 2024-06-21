@@ -1,0 +1,11 @@
+server:
+  port: 9800
+mysql:
+  host: 127.0.0.1
+  port: 33306
+  username: root
+  password: qqqq1111
+  dbname: shop-dev-go
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: 3600

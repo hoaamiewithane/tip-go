@@ -1,13 +1,7 @@
 package main
 
-import (
-	"go-ecommerce/internal/routers"
-)
+import "go-ecommerce/internal/initialize"
 
 func main() {
-	r := routers.NewRouter()
-	err := r.Run(":9800")
-	if err != nil {
-		return
-	}
+	initialize.Run()
 }

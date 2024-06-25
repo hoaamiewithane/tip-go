@@ -1,5 +1,14 @@
 package global
 
-import "go-ecommerce/pkg/setting"
+import (
+	"go-ecommerce/pkg/logger"
+	"go-ecommerce/pkg/setting"
 
-var Config setting.Config
+	"gorm.io/gorm"
+)
+
+var (
+	Config setting.Config
+	Logger *logger.LoggerZap
+	Mdb    *gorm.DB
+)
